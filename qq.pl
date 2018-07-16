@@ -1,7 +1,7 @@
 use Webqq::Encryption qw(pwd_encrypt);
 use Digest::MD5 qw(md5 md5_hex md5_base64); 
 use Mojo::Webqq;
-my $client = Mojo::Webqq->new(log_encoding=>"utf-8",is_init_group=>0,is_update_group=>0,pwd=>Digest::MD5::md5_hex('你的qq密码'));
+my $client = Mojo::Webqq->new(log_encoding=>"utf-8",is_init_group=>0,is_update_group=>0);
 $client->load("ShowMsg");
 $client->load("MiPush",data=>{
     registration_ids=>[""],#输入你自己从 GCMForMojo APP中获取到的令牌
