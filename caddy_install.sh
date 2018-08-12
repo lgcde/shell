@@ -42,9 +42,9 @@ Download_caddy(){
 	[[ -e "caddy_linux*.tar.gz" ]] && rm -rf "caddy_linux*.tar.gz"
 	
 	if [[ ! -z ${extension} ]]; then
-		extension_all="?plugins=http.forwardproxy,http.geoip,http.git,http.hugo,http.ipfilter,http.mailout,http.nobots,http.realip,http.upload,http.webdav,net,http.cache,http.cgi,http.cors,http.filemanager,http.ratelimit,hook.service&license=personal"
+		extension_all="?plugins=http.forwardproxy,http.geoip,http.git,http.hugo,http.minify,http.ipfilter,http.mailout,http.nobots,http.realip,http.upload,http.webdav,net,http.cache,http.cgi,http.cors,http.filemanager,http.ratelimit,hook.service&license=personal"
 	else
-		extension_all="?plugins=http.forwardproxy,http.geoip,http.git,http.hugo,http.ipfilter,http.mailout,http.nobots,http.realip,http.upload,http.webdav,net,http.cache,http.cgi,http.cors,http.filemanager,http.ratelimit,hook.service&license=personal"
+		extension_all="?plugins=http.forwardproxy,http.geoip,http.git,http.hugo,http.minify,http.ipfilter,http.mailout,http.nobots,http.realip,http.upload,http.webdav,net,http.cache,http.cgi,http.cors,http.filemanager,http.ratelimit,hook.service&license=personal"
 	fi
 	
 	if [[ ${bit} == "i386" ]]; then
